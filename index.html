@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Foodmap</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="grey darken-3">
+	<!-- loding page -->
+	<div class="container-fluid preload">
+		<div class="row">
+			<div>
+				<h1 class="titulo orange-text text-accent-2 center-align">Foodmap</h1>
+				<div class="progress col s6 offset-s3 preloader">
+      		<div class="indeterminate"></div>
+  			</div>			  
+			</div>
+		</div>
+	</div><!-- /loading page -->
+	<!-- primera vista/mapa -->
+	<div>
+		<h3 class="titulo orange-text text-accent-2 center-align">Foodmap</h3>
+		<hr>
+		<div class="map-margen">
+      <div class="cuadro-mapa" id="map">
+      	<iframe class="thumbnail embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62523112.01406334!2d-111.68263479507961!3d-15.610283760438165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x90f99effb40af535%3A0xd2673dbf02a5b69c!2sLatin+America!5e0!3m2!1ses-419!2scl!4v1512399612050" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <h4>Comida cerca de ti</h4>
+    <!-- filtro -->
+    
+	</div>
+	<!-- Scripts -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>  
+	<script src="assets/js/app.js"></script>
+</body>
+</html>

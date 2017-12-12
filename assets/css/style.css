@@ -1,0 +1,19 @@
+.preload{
+  height: 20em;
+}
+
+.preload h1{
+  margin-top: 50%;
+}
+
+.cuadro-mapa {
+  height: 27em;
+  width: 100%;
+  margin: 0;
+}
+
+.map-margen {
+  margin: 3em 0;
+  padding: .5em;
+  border: 1px solid #fff;
+}
