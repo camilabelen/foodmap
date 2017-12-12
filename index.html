@@ -8,12 +8,12 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="grey darken-3">
+<body class="teal darken-2">
 	<!-- loding page -->
 	<div class="container-fluid preload">
 		<div class="row">
-			<div>
-				<h1 class="titulo orange-text text-accent-2 center-align">Foodmap</h1>
+			<div class="col s12">
+				<h2 class="col s12 titulo white-text center-align">F o o d M a p</h2>
 				<div class="progress col s6 offset-s3 preloader">
       		<div class="indeterminate"></div>
   			</div>			  
@@ -21,20 +21,142 @@
 		</div>
 	</div><!-- /loading page -->
 	<!-- primera vista/mapa -->
-	<div>
-		<h3 class="titulo orange-text text-accent-2 center-align">Foodmap</h3>
-		<hr>
-		<div class="map-margen">
-      <div class="cuadro-mapa" id="map">
-      	<iframe class="thumbnail embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62523112.01406334!2d-111.68263479507961!3d-15.610283760438165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x90f99effb40af535%3A0xd2673dbf02a5b69c!2sLatin+America!5e0!3m2!1ses-419!2scl!4v1512399612050" frameborder="0" style="border:0" allowfullscreen></iframe>
+	<div class="section1 container">
+    <div class="row">
+		  <h4 class="titulo white-text center-align">F o o d Map</h4>
+      <hr>
+    </div>
+		<div class="row">
+      <div class="col s10 offset-s1">
+  		  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15839.560573983168!2d-70.6562586840445!3d-33.426964815611484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1513106430644" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
     </div>
-    <h4>Comida cerca de ti</h4>
+    <div>
+      <h5 class="center-align white-text">Comida cerca de ti</h5>
+    </div>    
     <!-- filtro -->
-    
-	</div>
+    <!-- Dropdown Trigger -->
+    <div class="row">
+      <a class='dropdown-button btn col s8 offset-s2 teal lighten-3' href='#' data-beloworigin="true" data-constrainwidth="true" data-hover="true" data-activates='dropdown1'>Filtrar Restaurantes</a>
+    </div>
+  <!-- Dropdown Structure -->
+    <div class="row">
+      <ul id='dropdown1' class='dropdown-content col s8 offset-s2 filtro'>
+        <li><a class="searchFood" id="chinese" href="#!">Comida china</a></li>
+        <li><a class="searchFood" id="arabe" href="#!">Comida árabe</a></li>
+        <li><a class="searchFood" id="vegan" href="#!">Comida vegana</a></li>
+      </ul>
+    </div>
+    <!-- tipos de comida -->
+    <!-- comida china -->
+    <div class="container food chineseFood">
+      <div class="row">
+        <div class="col s6">
+          <a class="waves-effect waves-light modal-trigger" href="#modal1"><img src="assets/images/china1.jpg" alt=""></a>
+        </div>
+        <div class="col s6">
+          <a class="waves-effect waves-light modal-trigger" href="#modal2"><img src="assets/images/china2.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <!-- comida coreana -->
+    <div class="container food arabicFood">
+      <div class="row">
+        <div class="col s6">
+          <a class="waves-effect waves-light modal-trigger" href="#modal3"><img class="" src="assets/images/arabe1.jpg" alt=""></a>
+        </div>
+        <div class="col s6">
+          <a class="waves-effect waves-light modal-trigger" href="#modal4"><img src="assets/images/arabe2.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+    <!-- comida arabe -->
+    <div class="container food veganFood">
+      <div class="row">
+        <div class="col s6">
+          <a class="waves-effect waves-light modal-trigger" href="#modal4"><img src="assets/images/vegan1.jpg" alt=""></a>
+        </div>
+        <div class="col s6">
+          <a class="waves-effect waves-light modal-trigger" href="#modal5"><img src="assets/images/vegan2.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+    <div class="footer-copyright">
+      <div class="container center-align white-text">
+        <p>© 2017 Copyright</p>
+      </div>
+    </div>
+  </footer>
+  <!-- modales -->
+  <!-- modal 1 -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+  <!-- modal 2 -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+  <!-- modal 3 -->
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+  <!-- modal 4 -->
+  <div id="modal4" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+  <!-- modal 5 -->
+  <div id="modal5" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+  <!-- modal 6 -->
+  <div id="moda61" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
 	<!-- Scripts -->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>  
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
 	<script src="assets/js/app.js"></script>
 </body>
 </html>
+
+

@@ -1,39 +1,26 @@
 $(document).ready(function(){
-	$('.preload').fadeIn(5000).fadeOut(1000);
-
+	$('.preload').fadeIn(15000).fadeOut(1000);  
+  
 });
 
-function initMap() {
-  var map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 5,
-    center: {lat: -33.4724712, lng: -70.9107133},
-    mapTypeControl: false,
-    zoomControl: false,
-    streetViewControl: false
-  });
+/*
+$('.category_list .category_item[category="all"]').addClass('ct_item-active');
 
-  function buscar() {
-    if(navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(funcionExito, funcionError);
-    }
-  }
+$('.category_item').click(function(){
 
-  var latitud, longitud;
-  var funcionExito = function (posicion) {
-    latitud = posicion.coords.latitude;
-    longitud = posicion.coords.longitude;
-    var miUbicacion = new google.maps.Marker({
-      position : {lat: latitud, lng: longitud},
-      animation: google.maps.Animation.DROP,
-      map: map,
-    });
-    map.setZoom(17);
-    map.setCenter({lat: latitud, lng: longitud});
-  }
 
-  var funcionError = function (error) {
-    alert("Tenemos problemas encontrando tu ubicación");
-  }
-  
-  buscar();
-}
+  var catProduct = $(this).attr('category');
+  $('.category_item').removeClass('ct_item-active');
+  $(this).addClas('ct_item-active');
+
+  //ocultando productos
+  $('.product-item').hide();
+  //mostrando 
+  $('.product-item[category="'+catProducts+'"]').show()
+})
+
+$('.category_item[category="all"]').click(function(){
+  $('.product-item').show();
+})
+*/
+
