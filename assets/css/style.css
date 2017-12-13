@@ -20,3 +20,15 @@ html {
   height: 13em;
 }
 
+.comida {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  color: #FFF;
+  text-align: center;
+  z-index: 1;
+  opacity: 0.5;
+  position: fixed;
+  top: 0.5em;
+  display: none;
+}

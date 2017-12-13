@@ -37,19 +37,19 @@
     <!-- filtro -->
     <!-- Dropdown Trigger -->
     <div class="row">
-      <a class='dropdown-button btn col s8 offset-s2 teal lighten-3' href='#' data-beloworigin="true" data-constrainwidth="true" data-hover="true" data-activates='dropdown1'>Filtrar Restaurantes</a>
+      <a class='dropdown-button btn col s8 offset-s2 teal lighten-3 filter-btn' href='#' data-beloworigin="true" data-constrainwidth="true" data-hover="true" data-activates='dropdown1'>Filtrar Restaurantes</a>
     </div>
   <!-- Dropdown Structure -->
     <div class="row">
       <ul id='dropdown1' class='dropdown-content col s8 offset-s2 filtro'>
-        <li><a class="searchFood" id="chinese" href="#!">Comida china</a></li>
-        <li><a class="searchFood" id="arabe" href="#!">Comida árabe</a></li>
+        <li><a class="searchFood" id="chinese" href="#chineseFood">Comida china</a></li>
+        <li><a class="searchFood" id="arabic" href="#!">Comida árabe</a></li>
         <li><a class="searchFood" id="vegan" href="#!">Comida vegana</a></li>
       </ul>
     </div>
     <!-- tipos de comida -->
     <!-- comida china -->
-    <div class="container food chineseFood">
+    <div class="container food chineseFood" id="chineseFood">
       <div class="row">
         <div class="col s6">
           <a class="waves-effect waves-light modal-trigger" href="#modal1"><img src="assets/images/china1.jpg" alt=""></a>
@@ -59,25 +59,30 @@
         </div>
       </div>
     </div>
-    <!-- comida coreana -->
+    <!-- comida arabe -->
     <div class="container food arabicFood">
       <div class="row">
         <div class="col s6">
-          <a class="waves-effect waves-light modal-trigger" href="#modal3"><img class="" src="assets/images/arabe1.jpg" alt=""></a>
+          <div class="food">
+            <a class="waves-effect waves-light modal-trigger" href="#modal3"><img src="assets/images/arabe1.jpg" alt=""></a>
+            <div class="comida">
+              <h3>food</h3>
+            </div>
+          </div>
         </div>
         <div class="col s6">
           <a class="waves-effect waves-light modal-trigger" href="#modal4"><img src="assets/images/arabe2.jpg" alt=""></a>
         </div>
       </div>
     </div>
-    <!-- comida arabe -->
+    <!-- comida vegana -->
     <div class="container food veganFood">
       <div class="row">
         <div class="col s6">
-          <a class="waves-effect waves-light modal-trigger" href="#modal4"><img src="assets/images/vegan1.jpg" alt=""></a>
+          <a class="waves-effect waves-light modal-trigger" href="#modal5"><img src="assets/images/vegan1.jpg" alt=""></a>
         </div>
         <div class="col s6">
-          <a class="waves-effect waves-light modal-trigger" href="#modal5"><img src="assets/images/vegan2.jpg" alt=""></a>
+          <a class="waves-effect waves-light modal-trigger" href="#modal6"><img src="assets/images/vegan2.jpg" alt=""></a>
         </div>
       </div>
     </div>
@@ -92,69 +97,111 @@
   </footer>
   <!-- modales -->
   <!-- modal 1 -->
-  <div id="modal1" class="modal">
+  <div id="modal1" class="modal chineseModal1">
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+      <h4>Comida china 1</h4>
+      <div>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15839.560573983168!2d-70.6562586840445!3d-33.426964815611484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1513106430644" width="250" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <h5>A bunch of text</h5>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">pedir ahora</a>
     </div>
   </div>
   <!-- modal 2 -->
   <div id="modal2" class="modal">
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+      <h4>Comida china 2</h4>
+      <div>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15839.560573983168!2d-70.6562586840445!3d-33.426964815611484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1513106430644" width="250" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <h5>A bunch of text</h5>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">pedir ahora</a>
     </div>
   </div>
   <!-- modal 3 -->
   <div id="modal3" class="modal">
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+      <h4>Comida árabe 1</h4>
+      <div>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15839.560573983168!2d-70.6562586840445!3d-33.426964815611484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1513106430644" width="250" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <h5>A bunch of text</h5>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">pedir ahora</a>
     </div>
   </div>
   <!-- modal 4 -->
   <div id="modal4" class="modal">
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+      <h4>Comida árabe 2</h4>
+      <div>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15839.560573983168!2d-70.6562586840445!3d-33.426964815611484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1513106430644" width="250" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <h5>A bunch of text</h5>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">pedir ahora</a>
     </div>
   </div>
   <!-- modal 5 -->
   <div id="modal5" class="modal">
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+      <h4>Comida vegana 1</h4>
+      <div>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15839.560573983168!2d-70.6562586840445!3d-33.426964815611484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1513106430644" width="250" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <h5>A bunch of text</h5>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Pedir ahora</a>
     </div>
   </div>
   <!-- modal 6 -->
-  <div id="moda61" class="modal">
+  <div id="modal6" class="modal">
     <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
+      <h4>Comida vegana 2</h4>
+      <div>
+        <div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15839.560573983168!2d-70.6562586840445!3d-33.426964815611484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1513106430644" width="250" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <h5>A bunch of text</h5>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Pedir ahora</a>
     </div>
   </div>
 
 	<!-- Scripts -->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
-  <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	<script src="assets/js/app.js"></script>
 </body>
 </html>
