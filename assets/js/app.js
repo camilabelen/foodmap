@@ -1,5 +1,14 @@
 $(document).ready(function(){
-	$('.preload').fadeIn(15000).fadeOut(1000);  
+	$('.section1, .footer').hide();
+  $('.preload').show();
+  splash(3000);
+  //funcion pagina splash
+  function splash(time){
+    setTimeout(function(){
+    $('.preload').fadeOut(); 
+    }, time);
+    $('.section1').delay(3500).fadeIn();
+  }  
   
 });
 
