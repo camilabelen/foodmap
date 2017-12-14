@@ -21,12 +21,14 @@ $(document).ready(function(){
         console.log(modal, trigger);
       },
     });
-/*
-  $('.food').mouseover(function(){
-    $('.comida').show();
-  }).mouseout(function(){
-    $('.comida').hide();
-  });*/
+
+  /*
+  *$('.food').mouseover(function(){
+  *  $('.comida').show();
+  *}).mouseout(function(){
+  *  $('.comida').hide();
+  *});
+  */
 
   $('#chinese').click(function(){
     $('#dropdown1').hide();
